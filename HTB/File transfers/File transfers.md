@@ -156,7 +156,12 @@ rdesktop 10.10.10.132 -d HTB -u administrator -p 'Password0@' -r disk:linux='/ho
 ```shell
 xfreerdp /v:10.10.10.132 /d:HTB /u:administrator /p:'Password0@' /drive:linux,/home/plaintext/htb/academy/filetransfer
 ```
+## transfer between 2 win hosts
 
+```
+net use \\networklocation\sharefolder password /USER:username
+copy \*.bak \\networklocation\sharefolder\*.bak
+```
 
 # living of the land
 
